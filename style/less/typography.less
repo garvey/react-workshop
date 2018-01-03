@@ -1,0 +1,36 @@
+
+/* Fonts */
+@font-face {
+  font-family: "universLTStd";
+  src: url("fonts/UniversLTStd.woff") format('woff');
+}
+
+@font-face {
+  font-family: "universLTStd-Bold";
+  src: url("fonts/UniversLTStd-Bold.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "universLTStd-Light";
+  src: url("fonts/UniversLTStd-Light.woff") format('woff');
+  font-weight: lighter;
+}
+
+@font-standard: universLTStd;
+@font-bold: universLTStd-Bold;
+@font-light: universLTStd-Light;
+
+body {
+  font-family: @font-standard;
+  color: @black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-light;
+
+  &.title {
+    padding: 20px 0;
+  }
+}
+
